@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Non Login | Green Al-Khoir</title>
+        <link rel="icon" href="arsip/logo.png" type="image/png">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="arsip/logo.png" alt="Logo">Green Al-Khoir
+                </div>
+                <form class="search-bar" action="#" method="get">
+                    <img src="arsip/cari.png" alt="Search">
+                    <input type="text" name="q" placeholder="Cari produk kami di sini!">
+                </form>
+                <div class="icons">
+                    <div class="cart" onclick="window.location.href='#'">
+                        <img src="arsip/keranjang.png" alt="Keranjang">
+                    </div>
+                    <div class="menu" onclick="toggleMenu()">
+                        <img src="arsip/menu.png" alt="Menu">
+                        <div class="menu-options" id="menu-options"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tulisan Berjalan -->
+            <div class="marquee">
+                <div class="marquee-text">
+                    Selamat datang di Green Al-Khoir Store. Disini kamu bisa belanja tanaman hias, memakai jasa rawat tanaman hias dengan biaya jasa yang standar, dan konsultasi tentang tanaman hias kamu dengan admin.
+                </div>
+           </div>
+       </div>
+
+        <!-- Halaman Utama / Beranda -->
+        <!-- Bagian Pembuka -->
+        <div class="content-1">
+            <div class="content-text-1">
+                <h1>Selamat Datang di<br>Green Al-Khoir</h1>
+                <p>
+                    Mari hijau segarkan rumah dan kantor anda dengan ciptaan yang indah dan terbaik dari sang maha terbaik.
+                </p>
+                <a href="produk.html">Beli Tanaman Hias</a>
+                <a href="perawatan.html">Booking Jasa Perawatan</a>
+            </div>
+            <div class="content-image-1">
+                <img src="arsip/gambarutama.png" alt="Tanaman Hias">
+            </div>
+        </div>
+
+        <!-- Bagian Produk -->
+        <div class="content-2">
+            <div class="slider" aria-label="Slider produk">
+                <div class="slider-container" id="sliderContainer" role="list">
+                    <div class="slide" role="listitem" tabindex="0">
+                        <img src="https://placehold.co/300x300/0891b2/ffffff?text=Produk+A" alt="Produk A dengan desain modern dan warna biru" />
+                        <h3>SPECIAL | Tanaman Hias Bunga Matahari Muda</h3>
+                        <p>Ditanam sendiri dari bibit benih kuaci oleh admin</p>
+                        <button class="btn-detail" aria-label="Lihat" scr="#">Detail Produk</button>
+                    </div>
+                    <div class="slide" role="listitem" tabindex="0">
+                        <img src="https://placehold.co/300x300/0891b2/ffffff?text=Produk+B" alt="Produk B berkualitas tinggi berwarna biru" />
+                        <h3>Produk B</h3>
+                        <p>Kualitas tinggi dan fungsional.</p>
+                        <button class="btn-detail" aria-label="Detail produk B">Detail Produk</button>
+                    </div>
+                    <div class="slide" role="listitem" tabindex="0">
+                        <img src="https://placehold.co/300x300/0891b2/ffffff?text=Produk+C" alt="Produk C elegan dengan desain minimalis" />
+                        <h3>Produk C</h3>
+                        <p>Elegan dan minimalis.</p>
+                        <button class="btn-detail" aria-label="Detail produk C">Detail Produk</button>
+                    </div>
+                    <div class="slide" role="listitem" tabindex="0">
+                        <img src="https://placehold.co/300x300/0891b2/ffffff?text=Produk+D" alt="Produk D dengan fitur lengkap dan berkualitas" />
+                        <h3>Produk D</h3>
+                        <p>Fitur lengkap dan tahan lama.</p>
+                        <button class="btn-detail" aria-label="Detail produk D">Detail Produk</button>
+                    </div>
+                    <div class="slide" role="listitem" tabindex="0">
+                        <img src="https://placehold.co/300x300/0891b2/ffffff?text=Produk+E" alt="Produk E pilihan terbaik untuk kebutuhan Anda" />
+                        <h3>Produk E</h3>
+                        <p>Pilihan terbaik untuk kebutuhan Anda.</p>
+                        <button class="btn-detail" aria-label="Detail produk E">Detail Produk</button>
+                    </div>
+                </div>
+                <div class="nav-arrows">
+                    <button class="arrow" id="prevBtn" aria-label="Geser ke produk sebelumnya">
+                        <span class="material-icons">chevron_left</span>
+                    </button>
+                    <button class="arrow" id="nextBtn" aria-label="Geser ke produk berikutnya">
+                        <span class="material-icons">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Chat Konsultasi -->
+        <div class="content-3">
+            <div class="content-image-3">
+                <img src="arsip/chat.png" alt="Konsultasi">
+            </div>
+            <div class="content-text-3">
+                <h1>Konsultasikan tanaman hiasmu bersama admin</h1>
+                <p>
+                    Yuk konsultasikan tanaman hias anda agar selalu tetap segar, indah, sehat, dan hjau warnanya bersama kami disini.
+                </p>
+                <a href="konsultasi.html">Konsultasi Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Bagian Booking Jasa Perawatan -->
+        <div class="content-3">
+            <div class="content-image-3">
+                <img src="arsip/siram.png" alt="Perawatan">
+            </div>
+            <div class="content-text-3">
+                <h1>Mau tanamanmu dirawat sama kami?</h1>
+                <p>
+                    Yuk titipkan tanaman hias anda untuk dirawat maksimal dengan setulus cinta sama Green Al-Khoir. Insya Allah dijamin segar, indah, sehat, dan hijau warnanya.
+                </p>
+                <a href="perawatan.html">Booking Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Bagian Contak Us -->
+        <div class="content-4">
+            <div class="content-text-4">
+                <h1>Contact Us</h1>
+                <br>
+                <div class="content-icon-4">
+                    <img src="arsip/beranda.png" alt="addrees">
+                    Jl. Masjid Al-Hukamah, RT 01 RW 04 No. 24, Parungbingung, Kel. Rangkapan Jaya Baru, Kec. Pancoran Mas, Kota Depok, 16434.
+                </div>
+                <div class="content-icon-4">
+                    <img src="arsip/whatsApp.png" alt="telepon">+62 895-8086-80807
+                </div>
+                <div class="content-icon-4">
+                    <img src="arsip/email.png" alt="email">greenalkhoirstore@gmail.com
+                </div>
+                <br>
+                <h1>Jam Operasional</h1>
+                <br>
+                <div class="content-icon-4">
+                    <img src="arsip/kalender.png" alt="kalender">Setiap Hari (Kecuali hari besar islam dan Cuti Bersama)
+                </div>
+                <div class="content-icon-4">
+                    <img src="arsip/jam.png" alt="jam">08.00 - 17.00 WIB 
+                </div>
+            </div>
+            <div class="content-text-41">
+                <div class="content-image-4">
+                    <img src="arsip/logo.png" alt="Green Al-Khoir">
+                </div>
+                <h1>Green Al-Khoir</h1>
+                <p>Hijaukan Kebaikan</p>
+            </div>
+        </div>
+
+        <!-- Bagian Follow Us -->
+        <div class="content-5">
+            <div class="content-icon-5">
+                <div class="cart" onclick="window.location.href='www.instagram.com'">
+                    <img src="arsip/instagram.png" alt="instagram">@greenalkhoir.id
+                </div>
+                <div class="cart" onclick="window.location.href='www.tiktok.com'">
+                    <img src="arsip/tiktok.png" alt="tiktok">@green.alkhoir_store
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+        <div class="bottom-nav">
+            <a class="nav-item" href="index.html">
+                <img src="arsip/beranda.png" alt="Beranda">Beranda
+            </a>
+            <a class="nav-item" href="produk.html">
+                <img src="arsip/beli.png" alt="Beli">Beli
+            </a>
+            <div class="icons">
+                <a class="nav-item" href="konsultasi.html">
+                    <img src="arsip/chat.png" alt="Konsultasi" class="chat-icon">
+                </a>
+            </div>
+            <a class="nav-item" href="perawatan.html">
+                <img src="arsip/rawat.png" alt="Perawatan">Jasa Rawat
+            </a>
+            <a class="nav-item" href="#">
+                <img src="arsip/akun.png" alt="Akun">Akun
+            </a>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
