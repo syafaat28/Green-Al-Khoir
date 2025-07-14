@@ -194,3 +194,31 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scrolled');
   }
 });
+
+// Tambahkan ini ke script.js, sebaiknya di akhir file
+
+document.addEventListener('DOMContentLoaded', function() {
+    const moreText = document.getElementById('moreText');
+    const readMoreBtn = document.getElementById('readMoreBtn');
+    const readLessBtn = document.getElementById('readLessBtn');
+
+    if (readMoreBtn) {
+        readMoreBtn.addEventListener('click', function() {
+            if (moreText) {
+                moreText.style.display = 'block';
+                readMoreBtn.style.display = 'none';
+                readLessBtn.style.display = 'inline-block'; // Tampilkan tombol "Baca Lebih Sedikit"
+            }
+        });
+    }
+
+    if (readLessBtn) {
+        readLessBtn.addEventListener('click', function() {
+            if (moreText) {
+                moreText.style.display = 'none';
+                readMoreBtn.style.display = 'inline-block'; // Tampilkan tombol "Baca Selengkapnya"
+                readLessBtn.style.display = 'none';
+            }
+        });
+    }
+});

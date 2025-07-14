@@ -9,6 +9,7 @@
         <!-- Koneksi Stylesheet -->
         <link rel="stylesheet" href="css/awal.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -23,18 +24,13 @@
                 <div class="icons">
                     <button onclick="window.location.href='registrasi.html'" class="btn-auth">Registrasi</button>
                     <button onclick="window.location.href='login.html'" class="btn-auth">Login</button>
-                    <!-- Tombol Menu -->
-                    <div class="menu" onclick="toggleMenu()">
-                        <img src="arsip/menu.png" alt="Menu">
-                        <div class="menu-options" id="menu-options"></div>
-                    </div>
                 </div>
             </div>
 
             <!-- Tulisan Berjalan (Marquee) -->
             <div class="marquee">
                 <div class="marquee-text">
-                    Selamat datang di Green Al-Khoir Store. Disini kamu bisa belanja tanaman hias, memakai jasa rawat tanaman hias dengan biaya jasa yang standar, dan konsultasi tentang tanaman hias kamu dengan admin.
+                    Assalaamu 'Alaikum Wa Rohmatulloohi Wa Barokaatuh. Selamat datang di Green Al-Khoir Barokah Serenity Flora Indonesia. Disini kamu bisa belanja bahkan menjual tanaman hias kepada kami, memberikan sahabat suprize tanaman hias, memakai jasa perawat tanaman hias dengan biaya jasa yang murah dan memuaskan, serta chat konsultasi tentang tanaman hias kamu bersama kami disini.
                 </div>
            </div>
        </div>
@@ -59,35 +55,85 @@
                 <a href="perawatan.html">Booking Jasa Perawatan</a>
             </div>
             <div class="content-image-1"></div>
+            <!-- Kotak Layanan Mirip Gambar -->
+            <div class="layanan-box">
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/troli.jpg" alt="Belanja"></div>
+                    <span>GeShop</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeSurprise</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/bayar.jpg" alt="Jual"></div>
+                    <span>GeJual</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeTukar</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/rawat-gambar.jpg" alt="Perawatan"></div>
+                    <span>GeRawat</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeAntar</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GePromo</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeEvent</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeEdukasi</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeHadiah</span>
+                </a>
+                <a href="#" class="layanan-item">
+                    <div class="icon-circle"><img src="arsip/chat-hitam.jpg" alt="Konsultasi"></div>
+                    <span>GeChat</span>
+                </a>
+            </div>
         </div>
 
         <!-- Bagian Tentang Kami -->
          <div class="content-2">
             <!-- Teks Ajakan -->
             <div class="content-text-2">
-                <h1>Tentang Green Al-Khoir</h1>
-                <p>Apa sih Green Al-Khoir itu? Dan Kenapa kita harus membeli dan menjual tanaman hias, <br> membooking jasa perawatan, dan konsultasi di sini?</p>
-            </div>
-            <!-- -->
-             <div class="content-image-2">
-                <img src="arsip/gambarutama.png" alt="Gambar Utama">
-            </div>
-            <!-- -->
-            <div class="content-text-21">
-                <div class="slide">
-                    <h1>Apa itu Green Al-Khoir?</h1>
-                    
-                    <p>Green Al-Khoir adalah sebuah toko penjualan dan pembelian, serta perawatan
-                    tanaman hias alam rawatan. Dan tidak cuman itu, Green Al-Khoir juga melayani
-                    konsultasi secara online via chat seputar tanaman hias alam rawatan anda.
-                    Green Al-Khoir ini hadir dengan komitmen tulus sepenuh hati membantu dan melayani Anda
-                    yang ingin mempercantik rumah dan kantor dengan tanaman hias yang indah, sehat, segar, 
-                    dan terawat.</p>
+                <h1>Apa sih Green Al-Khoir itu?</h1>
+                <p>Green Al-Khoir Barokah Serenity Flora Indonesia adalah sebuah entitas terkemuka dalam industri tanaman hias alam rawatan yang berdedikasi penuh untuk menyediakan solusi komprehensif bagi para pencinta alam dan tanaman. Kami hadir tidak hanya berfokus pada transaksi jual dan beli tanaman, melainkan juga berkomitmen untuk menjamin perawatan berkelanjutan yang Insya Allah amanah bagi setiap tanaman yang kami rawat dengan setulus hati.</p>
+                <div id="moreText" style="display: none;">
+                <p>Lebih dari itu, Green Al-Khoir juga menghadirkan layanan konsultasi mengenai perawatan dan pemeliharaan secara online melalui platform web chat di website resmi kami dan WhatsApp. Serta menyelenggarakan edukasi mengenai pentingnya menjaga, merawat, dan melestarikan penghijauan di lingkungan tercinta secara offline dengan kunjungan atau online melalui platform media digital lainnya.</p>
+                <p>Kami hadir untuk anda dengan visi dan misi luar biasa untuk memberdayakan setiap individu dalam menciptakan ruang hidup yang asri, indah, sehat, segar, berkah dan menawan melalui kebaikan dan keberkahan alam dari berbagai tanaman hias. Komitmen tulus kami adalah menjadi mitra terpercaya Anda dan seluruh masyarakat serta lembaga eksternal dalam mewujudkan lingkungan yang harmoni dengan kebaikan dan keberkahan alam yang tuhan ciptakan melalui keindahan tanaman hias yang kita miliki. Untuk memulai itu semua, perlu adanya niat dan ikhtiar dengan paling minimal membelanja tanaman hias yang indah dan terpercaya yang pastinya hanya di Green Al-Khoir, #HijaukanKebaikan.</p>
                 </div>
+                <button id="readMoreBtn" class="read-more-btn">Baca Selengkapnya</button>
+                <button id="readLessBtn" class="read-more-btn" style="display: none;">Baca Lebih Sedikit</button>
+            </div>
+            <div class="content-text-21">
+                <div class="content-image-2">
+                    <img src="logo-asli.png" alt="Green Al-Khoir">
+                </div>
+                <h1>Green Al-Khoir</h1>
+                <h2>Barokah Serenity Flora Indonesia</h2>
             </div>
          </div>
 
         <!-- Bagian Slider Produk -->
+        <div class="content-E">
+            <div class="background-event" style="background-image: url('img/bg1.jpg');"></div>
+            <div class="content-event">
+                <img src="img/bg2.jpg">
+                <a href="#">Lihat dan Ikut Event Yuk!</a>
+            </div>
+        </div>
         <div class="content-3">
             <!-- Teks Ajakan -->
             <div class="content-text-3">
